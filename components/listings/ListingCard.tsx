@@ -10,7 +10,7 @@ import {
     SafeListing,
     SafeReservation,
     SafeUser
-} from "../../types";
+} from "@/types";
 
 import HeartButton from "../HeartButton";
 import Button from "../Button";

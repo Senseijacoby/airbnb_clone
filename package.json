@@ -34,6 +34,7 @@
     "react-leaflet": "^4.2.1",
     "react-select": "^5.8.0",
     "react-spinners": "^0.13.8",
+    "server-only": "^0.0.1",
     "sharp": "^0.33.0",
     "uuid": "^9.0.1",
     "world-countries": "^5.0.0",

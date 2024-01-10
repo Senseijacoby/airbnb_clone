@@ -1,6 +1,8 @@
+// 'use client'
 import Container from "@/components/Container";
 import ListingCard from "@/components/listings/ListingCard";
 import EmptyState from "@/components/EmptyState";
+
 
 import getListings, {
   IListingsParams
@@ -11,6 +13,7 @@ import ClientOnly from "@/components/ClientOnly";
 interface HomeProps {
   searchParams: IListingsParams
 };
+
 
 export default async function Home({ searchParams }: HomeProps) {
   const listings = await getListings(searchParams);
@@ -24,7 +27,9 @@ export default async function Home({ searchParams }: HomeProps) {
     );
   }
 
+
   return (
+
     <ClientOnly>
       <Container>
         <div
@@ -50,6 +55,7 @@ export default async function Home({ searchParams }: HomeProps) {
         </div>
       </Container>
     </ClientOnly>
+
   )
 }
 
